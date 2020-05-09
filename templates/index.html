@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Real Estate</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Real Estate</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="text-center">Real Estate Price Predictor</h1>
+      <form action="/" method="POST">
+        <div class="form-group">
+          <label for="CRIM">Crime rate of town</label>
+          <input type="text" class="form-control" id="CRIM" placeholder="CRIM" name="CRIM" value="0">
+        </div>
+        <div class="form-group">
+            <label for="ZN">proportion of residential land zoned for lots over 
+                25,000 sq.ft.</label>
+            <input type="text" class="form-control" id="ZN" name="ZN" placeholder="ZN" value="0">
+        </div>
+        <div class="form-group">
+            <label for="INDUS">proportion of non-retail business acres per town</label>
+            <input type="text" class="form-control" id="INDUS" name="INDUS" placeholder="INDUS" value="0">
+        </div>
+        <div class="form-group">
+            <label for="RS">River side</label>
+            <select class="form-control" id="RS" name="RS" >
+              <option>0</option>
+              <option>1</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="NOX">nitous oxide concentration</label>
+            <input type="text" class="form-control" id="NOX" name="NOX" placeholder="NOX" value="0">
+        </div>
+        <div class="form-group">
+            <label for="RM">average number of rooms per dwelling</label>
+            <input type="text" class="form-control" id="RM" name="RM" placeholder="RM" value="0">
+        </div>
+        <div class="form-group">
+            <label for="AGE">AGE</label>
+            <input type="text" class="form-control" id="AGE" name="AGE" placeholder="AGE" value="0">
+        </div>
+        <div class="form-group">
+            <label for="DIS">Distace from station</label>
+            <input type="text" class="form-control" id="DIS" name="DIS" placeholder="DIS" value="0">
+        </div>
+        <div class="form-group">
+            <label for="HD">Highway Distace</label>
+            <input type="text" class="form-control" id="HD" name="HD" placeholder="HD" value="0">
+        </div>
+        <div class="form-group">
+            <label for="TAX">Tax Rate</label>
+            <input type="text" class="form-control" id="TAX" name="TAX" placeholder="Tax" value="0">
+        </div>
+        <div class="form-group">
+            <label for="PTRATIO">pupil-teacher ratio by town</label>
+            <input type="text" class="form-control" id="PTRATIO" name="PTRATIO" placeholder="PTRATIO" value="0">
+        </div>
+        <div class="form-group">
+            <label for="B">Blocks in town</label>
+            <input type="text" class="form-control" id="B" name="B" placeholder="B" value="0">
+        </div>
+       
+        <div class="form-group">
+            <label for="LSTAT">Populatio rate</label>
+            <input type="text" class="form-control" id="LSTAT" name="LSTAT" placeholder="LSTAT" value="0">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
